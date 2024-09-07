@@ -1,5 +1,7 @@
+@import "../styles/variables.scss";
+
 h1 {
     font-family: 'Gotham';
-    color: red;
+    color: $dark-grey;
     font-weight: 700;
 }
