@@ -1,7 +1,9 @@
 @import "../styles/variables.scss";
 
-h1 {
-    font-family: 'Gotham';
-    color: $dark-grey;
-    font-weight: 700;
+.app-container {
+    //min-width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
