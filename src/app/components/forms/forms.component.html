@@ -7,31 +7,31 @@
   <h3>Qual horário você quer treinar?</h3>
 
   <div class="radio-wrapper">
-    <input type="radio" name="morning" value="morning" />
+    <input type="radio" id="morning" name="time" value="morning" />
     <label for="morning">Manhã</label>
-    <span>06:00 ás 12:00</span>
+    <span>06:00 às 12:00</span>
   </div>
 
   <div class="radio-wrapper">
-    <input type="radio" name="afternoon" value="afternoon" />
+    <input type="radio" id="afternoon" name="time" value="afternoon" />
     <label for="afternoon">Tarde</label>
-    <span>12:01 ás 18:00</span>
+    <span>12:01 às 18:00</span>
   </div>
 
   <div class="radio-wrapper">
-    <input type="radio" name="night" value="night" />
+    <input type="radio" id="night" name="time" value="night" />
     <label for="night">Noite</label>
-    <span>18:01 ás 23:00</span>
+    <span>18:01 às 23:00</span>
   </div>
 
   <div class="checkbox-wrapper">
-    <input type="checkbox" name="show-closed" />
+    <input type="checkbox" id="show-closed" name="show-closed" />
     <label for="show-closed">Exibir unidades fechadas</label>
-    <span>Resultados encontrandos: {{results.length}}</span>
+    <span>Resultados encontrados: {{ results.length }}</span>
   </div>
 
   <div class="btn-wrapper">
     <button class="btn btn-primary">Encontrar unidade</button>
-    <button class="btn btn-secondary">Limpar</button>
+    <button class="btn btn-secondary" type="reset">Limpar</button>
   </div>
 </form>
