@@ -61,6 +61,7 @@
 
     .btn-wrapper {
         display: flex;
+        flex-direction: column;
         gap: 12px;
         align-items: center;
         justify-content: center;
@@ -72,8 +73,8 @@
             color: $dark-grey;
             font-weight: 700;
             text-transform: uppercase;
-            padding: 12px;
-            width: 25%;
+            padding: 14px;
+            width: 100%;
             border: none;
             cursor: pointer;
         }
@@ -93,12 +94,28 @@
         width: 100%;
         margin: 32px 0;
         color: $light-grey;
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-        position: relative;
-
-        span {
-            position: absolute;
-            right: 0;
+        input[type="checkbox"] {
+            margin-right: 4px;
         }
     }
+}
+
+@media(min-width: 768px) {
+    .form-group {
+        .btn-wrapper {
+            flex-direction: row;
+        }
+
+        .checkbox-wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+
 }

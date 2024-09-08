@@ -43,13 +43,15 @@
   </div>
 
   <div class="checkbox-wrapper">
-    <input
-      type="checkbox"
-      id="show-closed"
-      name="show-closed"
-      formControlName="showClosed"
-    />
-    <label for="show-closed">Exibir unidades fechadas</label>
+    <div class="checkbox">
+      <input
+        type="checkbox"
+        id="show-closed"
+        name="show-closed"
+        formControlName="showClosed"
+      />
+      <label for="show-closed">Exibir unidades fechadas</label>
+    </div>
     <span>Resultados encontrados: {{ results.length }}</span>
   </div>
 
